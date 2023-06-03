@@ -1,0 +1,226 @@
+:root {
+    --header-height: 80px;
+    --body-font: "Lexend"
+    --title-font: "Lexend"
+    --marta-color: #FCD034;
+    --scheduler-color: #FF9B71;
+    --mbb-color: #B7B5FA;
+    --moodfood-color: #748BDA;
+    --roblox-color: #2C3237;
+    --lacework-color: #1BBCF9;
+    --gba-color: #CCE9A7;
+    --accent-color: #F35C2C;
+    --highlight-color: #FFE6DE;
+    --primary-text-color: #363636;
+    --secondary-text-color: #909090;
+    --background-color: #FFFFFF;
+}
+.top-bar {
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: var(--header-height);
+    position: fixed;
+    overflow-x: auto;
+    overflow-y: hidden;
+    z-index: 1;
+    background-color: white;
+}
+.top-bar > * {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.nav-bar {
+    width: 100%;
+    margin: auto;
+}
+
+.logo {
+    padding-top: 5px;
+    padding-left: 3%;
+    padding-right: 20px;
+    float: left;
+    height: 50px;
+}
+
+nav ul {
+    line-height: 20px;
+    list-style-type: none;
+    float: right;
+    padding-right: 5%;
+}
+nav li {
+    display: inline-block;
+    padding-left: 30px;
+    font-family: "Lexend";
+    font-size: 1.1em;
+}
+@media only screen and (max-width: 600px) {
+    nav li {
+        padding-left: 15px;
+        font-size: 0.9em;
+    }
+}
+
+nav li a {
+    color: inherit;
+    text-decoration: none;
+}
+
+nav li:hover {
+    color: var(--accent-color);
+    transition: .2s ease;
+}
+
+nav .inactive {
+    color: var(--secondary-text-color);
+    text-decoration: none;
+}
+
+nav .selected {
+    color: var(--primary-text-color);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+a {
+    color: var(--secondary-text-color);
+}
+
+body {
+    overflow: auto;
+    width: 100%;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: var(--body-font);
+    font-size: 0.95em;
+    color: #363636;
+}
+
+:root {
+    --line-height: 170%;
+}
+p {
+    line-height: var(--line-height);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--title-font);
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: 550;
+}
+
+.no-wrap {
+    white-space: nowrap;
+}
+
+::selection { 
+    background-color: var(--highlight-color);
+}
+
+.xxs-space {
+    margin-top: 18px;
+}
+.xs-space {
+    margin-top: 36px;
+}
+.s-space {
+    margin-top: 48px;
+}
+.m-space {
+    margin-top: 96px;
+}
+.l-space {
+    margin-top: 144px;
+}
+.xl-space {
+    margin-top: 192px;
+}
+
+.tag {
+    display: inline-block;
+    width: fit-content;
+    background-color: var(--highlight-color);
+    padding: 6px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    margin-right: 12px;
+    font-size: .8em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+}
+
+  /* Base for a button, need to set colors in other stylesheets */
+.button {
+    display: block;
+    width: fit-content;
+    border: 1.5px solid;
+    border-radius: 10000rem; /*orig .5rem*/
+    font-weight: bold;
+    font-size: .95em;
+    text-decoration: none;
+    text-align: center;
+    padding: 9px 16px; /* orig .75rem 1rem; */
+    transition: 0.15s ease-in-out;
+}
+
+.active-button {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+    cursor: pointer;
+    margin: none;
+}
+.active-button:hover {
+    background-color: var(--accent-color);
+    color: white;
+}
+.inactive-button {
+    border-color: var(--secondary-text-color);
+    color: var(--secondary-text-color);
+    cursor: default;
+}
+
+.footer {
+    width: 100%;
+    margin: 60px auto;
+    overflow: hidden;
+    font-family: "Lexend";
+    font-weight: 500;
+    text-align: center;
+}
+
+.footer p {
+    margin-top: 16px;
+}
+
+.footer .logos {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer .logo {
+    height: 24px;
+    margin: 9px;
+    padding: 0;
+    display: inline-block;
+}
